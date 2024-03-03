@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+</head>
+<style>
+    #target_gallery{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 16px;
+    }
+    #target_gallery img{
+        width: 400px;
+        height: 400px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    #menu_gallery img{
+        width: 500px;
+        height: 500px;
+    }
+    #Nav{
+        display: flex;
+        justify-content: space-around;
+        background-color: burlywood;
+        padding:  10px;
+    }
+</style>
+<body>
+    <nav id="Nav">
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#menu_gallery">Menu</a>
+    </nav>
+    <div id="home">
+        <h2>Welcome to the technology space</h2>
+        <img src="images/tech.jpg"alt="techie">
+        <p>Here is an image showing the use of Artificial Intelligence</p>
+    </div>
+    <a href="#target_gallery" target="_blank">Click here to view the nature gallery</a>
+    <br>
+    <div id="target_gallery">
+        <img src="images/nature.avif" alt="">
+        <img src="images/nature1.avif" alt="">
+        <img src="images/nature2.jpg" alt="">
+        <img src="images/nature3.jpeg" alt="">
+        <img src="images/nature4.webp" alt="">
+        <img src="images/nature5.webp" alt="">
+        <img src="images/nature6webp.webp" alt="">
+        <img src="images/nature7.webp" alt="">
+        <img src="images/nature8.webp" alt="">
+        <img src="images/nature9.webp" alt="">
+        <img src="images/nature10.jpeg" alt="">
+        <img src="images/nature11.webp" alt="">
+    </div>
+    <br>
+    <a href="#menu_gallery" target="_parent">Click here to view the food menu</a>
+    <br>
+    <div id="menu_gallery">
+        <ul>
+            <li>
+                <p>For vegeterian</p>
+                <img src="images/food.jpg" alt="">
+            </li>
+            <li>
+                <p>For bugger</p>
+                <img src="images/food2.avif" alt="">
+            </li>
+            <li>
+                <p>pizza</p>
+                <img src="images/food3.jpg" alt="">
+            </li>
+            <li>
+                <p>Meat lovers</p>
+                <img src="images/food4.jpg" alt="">
+            </li>
+            <li>
+                <p>platter</p>
+                <img src="images/food5.avif" alt="">
+            </li>
+            <li>
+               <img src="images/food3.webp" alt="">
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
